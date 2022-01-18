@@ -30,8 +30,8 @@ class CreditCardWidget extends StatefulWidget {
       this.cardBgColor = const Color(0xff1b447b),
       this.obscureCardNumber = true,
       this.obscureCardCvv = true,
-      this.labelCardHolder = 'CARD HOLDER',
-      this.labelExpiredDate = 'MM/YY',
+      this.labelCardHolder = 'Kart Sahibi',
+      this.labelExpiredDate = 'AA/YY',
       this.cardType,
       this.isHolderNameVisible = false,
       this.backgroundImage,
@@ -294,7 +294,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'VALID\nTHRU',
+                    'SKT',
                     style: widget.textStyle ??
                         defaultTextStyle.copyWith(fontSize: 7),
                     textAlign: TextAlign.center,
@@ -338,7 +338,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
     final TextStyle defaultTextStyle =
         Theme.of(context).textTheme.headline6!.merge(
               const TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontFamily: 'halter',
                 fontSize: 16,
                 package: 'flutter_credit_card',
@@ -384,7 +384,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
                   Expanded(
                     flex: 3,
                     child: Container(
-                      color: Colors.white,
+                      color: Colors.black,
                       child: Padding(
                         padding: const EdgeInsets.all(5),
                         child: Text(
